@@ -12,7 +12,7 @@ so that you have a folder named UCI HAR Dataset with all subfolders and files.
 
 ##Code book
 	
-###variables names and descriptions
+###variables names and descriptions of output
 		
 Name|Description|Type
 ----|-----------|----
