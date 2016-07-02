@@ -16,86 +16,85 @@ so that you have a folder named UCI HAR Dataset with all subfolders and files.
 		
 Name|Description
 ----|-----------
-Activity|Factor
-Subject|Num
-Activity|Factor
-Subject|Num
-tBodyAcc-mean()-X|Int
-tBodyAcc-mean()-Y|Int
-tBodyAcc-mean()-Z|Int
-tBodyAcc-std()-X|Int
-tBodyAcc-std()-Y|Int
-tBodyAcc-std()-Z|Int
-tGravityAcc-mean()-X|Int
-tGravityAcc-mean()-Y|Int
-tGravityAcc-mean()-Z|Int
-tGravityAcc-std()-X|Int
-tGravityAcc-std()-Y|Int
-tGravityAcc-std()-Z|Int
-tBodyAccJerk-mean()-X|Int
-tBodyAccJerk-mean()-Y|Int
-tBodyAccJerk-mean()-Z|Int
-tBodyAccJerk-std()-X|Int
-tBodyAccJerk-std()-Y|Int
-tBodyAccJerk-std()-Z|Int
-tBodyGyro-mean()-X|Int
-tBodyGyro-mean()-Y|Int
-tBodyGyro-mean()-Z|Int
-tBodyGyro-std()-X|Int
-tBodyGyro-std()-Y|Int
-tBodyGyro-std()-Z|Int
-tBodyGyroJerk-mean()-X|Int
-tBodyGyroJerk-mean()-Y|Int
-tBodyGyroJerk-mean()-Z|Int
-tBodyGyroJerk-std()-X|Int
-tBodyGyroJerk-std()-Y|Int
-tBodyGyroJerk-std()-Z|Int
-tBodyAccMag-mean()|Int
-tBodyAccMag-std()|Int
-tGravityAccMag-mean()|Int
-tGravityAccMag-std()|Int
-tBodyAccJerkMag-mean()|Int
-tBodyAccJerkMag-std()|Int
-tBodyGyroMag-mean()|Int
-tBodyGyroMag-std()|Int
-tBodyGyroJerkMag-mean()|Int
-tBodyGyroJerkMag-std()|Int
-fBodyAcc-mean()-X|Int
-fBodyAcc-mean()-Y|Int
-fBodyAcc-mean()-Z|Int
-fBodyAcc-std()-X|Int
-fBodyAcc-std()-Y|Int
-fBodyAcc-std()-Z|Int
-fBodyAcc-meanFreq()-X|Int
-fBodyAcc-meanFreq()-Y|Int
-fBodyAcc-meanFreq()-Z|Int
-fBodyAccJerk-mean()-X|Int
-fBodyAccJerk-mean()-Y|Int
-fBodyAccJerk-mean()-Z|Int
-fBodyAccJerk-std()-X|Int
-fBodyAccJerk-std()-Y|Int
-fBodyAccJerk-std()-Z|Int
-fBodyAccJerk-meanFreq()-X|Int
-fBodyAccJerk-meanFreq()-Y|Int
-fBodyAccJerk-meanFreq()-Z|Int
-fBodyGyro-mean()-X|Int
-fBodyGyro-mean()-Y|Int
-fBodyGyro-mean()-Z|Int
-fBodyGyro-std()-X|Int
-fBodyGyro-std()-Y|Int
-fBodyGyro-std()-Z|Int
-fBodyGyro-meanFreq()-X|Int
-fBodyGyro-meanFreq()-Y|Int
-fBodyGyro-meanFreq()-Z|Int
-fBodyAccMag-mean()|Int
-fBodyAccMag-std()|Int
-fBodyAccMag-meanFreq()|Int
-fBodyBodyAccJerkMag-mean()|Int
-fBodyBodyAccJerkMag-std()|Int
-fBodyBodyAccJerkMag-meanFreq()|Int
-fBodyBodyGyroMag-mean()|Int
-fBodyBodyGyroMag-std()|Int
-fBodyBodyGyroMag-meanFreq()|Int
-fBodyBodyGyroJerkMag-mean()|Int
-fBodyBodyGyroJerkMag-std()|Int
-fBodyBodyGyroJerkMag-meanFreq()|Int
+Activity|Name of activity|Factor
+Subject|Number of Subject (1:30)|Num
+tBodyAcc-mean()-X|the average value for this feature (range: -1:1)|Int
+tBodyAcc-mean()-Y|the average value for this feature (range: -1:1)|Int
+tBodyAcc-mean()-Z|the average value for this feature (range: -1:1)|Int
+tBodyAcc-std()-X|the average value for this feature (range: -1:1)|Int
+tBodyAcc-std()-Y|the average value for this feature (range: -1:1)|Int
+tBodyAcc-std()-Z|the average value for this feature (range: -1:1)|Int
+tGravityAcc-mean()-X|the average value for this feature (range: -1:1)|Int
+tGravityAcc-mean()-Y|the average value for this feature (range: -1:1)|Int
+tGravityAcc-mean()-Z|the average value for this feature (range: -1:1)|Int
+tGravityAcc-std()-X|the average value for this feature (range: -1:1)|Int
+tGravityAcc-std()-Y|the average value for this feature (range: -1:1)|Int
+tGravityAcc-std()-Z|the average value for this feature (range: -1:1)|Int
+tBodyAccJerk-mean()-X|the average value for this feature (range: -1:1)|Int
+tBodyAccJerk-mean()-Y|the average value for this feature (range: -1:1)|Int
+tBodyAccJerk-mean()-Z|the average value for this feature (range: -1:1)|Int
+tBodyAccJerk-std()-X|the average value for this feature (range: -1:1)|Int
+tBodyAccJerk-std()-Y|the average value for this feature (range: -1:1)|Int
+tBodyAccJerk-std()-Z|the average value for this feature (range: -1:1)|Int
+tBodyGyro-mean()-X|the average value for this feature (range: -1:1)|Int
+tBodyGyro-mean()-Y|the average value for this feature (range: -1:1)|Int
+tBodyGyro-mean()-Z|the average value for this feature (range: -1:1)|Int
+tBodyGyro-std()-X|the average value for this feature (range: -1:1)|Int
+tBodyGyro-std()-Y|the average value for this feature (range: -1:1)|Int
+tBodyGyro-std()-Z|the average value for this feature (range: -1:1)|Int
+tBodyGyroJerk-mean()-X|the average value for this feature (range: -1:1)|Int
+tBodyGyroJerk-mean()-Y|the average value for this feature (range: -1:1)|Int
+tBodyGyroJerk-mean()-Z|the average value for this feature (range: -1:1)|Int
+tBodyGyroJerk-std()-X|the average value for this feature (range: -1:1)|Int
+tBodyGyroJerk-std()-Y|the average value for this feature (range: -1:1)|Int
+tBodyGyroJerk-std()-Z|the average value for this feature (range: -1:1)|Int
+tBodyAccMag-mean()|the average value for this feature (range: -1:1)|Int
+tBodyAccMag-std()|the average value for this feature (range: -1:1)|Int
+tGravityAccMag-mean()|the average value for this feature (range: -1:1)|Int
+tGravityAccMag-std()|the average value for this feature (range: -1:1)|Int
+tBodyAccJerkMag-mean()|the average value for this feature (range: -1:1)|Int
+tBodyAccJerkMag-std()|the average value for this feature (range: -1:1)|Int
+tBodyGyroMag-mean()|the average value for this feature (range: -1:1)|Int
+tBodyGyroMag-std()|the average value for this feature (range: -1:1)|Int
+tBodyGyroJerkMag-mean()|the average value for this feature (range: -1:1)|Int
+tBodyGyroJerkMag-std()|the average value for this feature (range: -1:1)|Int
+fBodyAcc-mean()-X|the average value for this feature (range: -1:1)|Int
+fBodyAcc-mean()-Y|the average value for this feature (range: -1:1)|Int
+fBodyAcc-mean()-Z|the average value for this feature (range: -1:1)|Int
+fBodyAcc-std()-X|the average value for this feature (range: -1:1)|Int
+fBodyAcc-std()-Y|the average value for this feature (range: -1:1)|Int
+fBodyAcc-std()-Z|the average value for this feature (range: -1:1)|Int
+fBodyAcc-meanFreq()-X|the average value for this feature (range: -1:1)|Int
+fBodyAcc-meanFreq()-Y|the average value for this feature (range: -1:1)|Int
+fBodyAcc-meanFreq()-Z|the average value for this feature (range: -1:1)|Int
+fBodyAccJerk-mean()-X|the average value for this feature (range: -1:1)|Int
+fBodyAccJerk-mean()-Y|the average value for this feature (range: -1:1)|Int
+fBodyAccJerk-mean()-Z|the average value for this feature (range: -1:1)|Int
+fBodyAccJerk-std()-X|the average value for this feature (range: -1:1)|Int
+fBodyAccJerk-std()-Y|the average value for this feature (range: -1:1)|Int
+fBodyAccJerk-std()-Z|the average value for this feature (range: -1:1)|Int
+fBodyAccJerk-meanFreq()-X|the average value for this feature (range: -1:1)|Int
+fBodyAccJerk-meanFreq()-Y|the average value for this feature (range: -1:1)|Int
+fBodyAccJerk-meanFreq()-Z|the average value for this feature (range: -1:1)|Int
+fBodyGyro-mean()-X|the average value for this feature (range: -1:1)|Int
+fBodyGyro-mean()-Y|the average value for this feature (range: -1:1)|Int
+fBodyGyro-mean()-Z|the average value for this feature (range: -1:1)|Int
+fBodyGyro-std()-X|the average value for this feature (range: -1:1)|Int
+fBodyGyro-std()-Y|the average value for this feature (range: -1:1)|Int
+fBodyGyro-std()-Z|the average value for this feature (range: -1:1)|Int
+fBodyGyro-meanFreq()-X|the average value for this feature (range: -1:1)|Int
+fBodyGyro-meanFreq()-Y|the average value for this feature (range: -1:1)|Int
+fBodyGyro-meanFreq()-Z|the average value for this feature (range: -1:1)|Int
+fBodyAccMag-mean()|the average value for this feature (range: -1:1)|Int
+fBodyAccMag-std()|the average value for this feature (range: -1:1)|Int
+fBodyAccMag-meanFreq()|the average value for this feature (range: -1:1)|Int
+fBodyBodyAccJerkMag-mean()|the average value for this feature (range: -1:1)|Int
+fBodyBodyAccJerkMag-std()|the average value for this feature (range: -1:1)|Int
+fBodyBodyAccJerkMag-meanFreq()|the average value for this feature (range: -1:1)|Int
+fBodyBodyGyroMag-mean()|the average value for this feature (range: -1:1)|Int
+fBodyBodyGyroMag-std()|the average value for this feature (range: -1:1)|Int
+fBodyBodyGyroMag-meanFreq()|the average value for this feature (range: -1:1)|Int
+fBodyBodyGyroJerkMag-mean()|the average value for this feature (range: -1:1)|Int
+fBodyBodyGyroJerkMag-std()|the average value for this feature (range: -1:1)|Int
+fBodyBodyGyroJerkMag-meanFreq()|the average value for this feature (range: -1:1)|Int
+
