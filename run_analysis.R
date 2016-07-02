@@ -1,4 +1,4 @@
-##Merges the training and the test sets to create one data set.
+  ##Merges the training and the test sets to create one data set.
 
   ## Import train/X_train.txt (training) AND  test/X_test.txt (test)
   train<-read.table(header = FALSE,file = "getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt")
@@ -31,6 +31,6 @@
   
 ##From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
   grouped<-aggregate(. ~ Activity + Subject, data = extracted, mean)
-  
-  
+  write.table(grouped,"tidy_data.txt",row.names=FALSE)
+
   
