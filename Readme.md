@@ -14,8 +14,8 @@ so that you have a folder named UCI HAR Dataset with all subfolders and files.
 	
 ###variables names and descriptions
 		
-Name|Description
-----|-----------
+Name|Description|Type
+----|-----------|----
 Activity|Name of activity|Factor
 Subject|Number of Subject (1:30)|Num
 tBodyAcc-mean()-X|the average value for this feature (range: -1:1)|Int
