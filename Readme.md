@@ -12,19 +12,19 @@ so that you have a folder named UCI HAR Dataset with all subfolders and files.
 
 ##Code book
 	
-	variables names and descriptions
+variables names and descriptions
 		
-		Name|Description
-		----|-----------
-		Activity|Factor
-		Subject|Num
-		tBodyAcc-mean()-X|Int
-		tBodyAcc-mean()-Y|Int
+Name|Description
+----|-----------
+Activity|Factor
+Subject|Num
+tBodyAcc-mean()-X|Int
+tBodyAcc-mean()-Y|Int
 		
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+	First Header | Second Header
+	------------ | -------------
+	Content from cell 1 | Content from cell 2
+	Content in the first column | Content in the second column
 		
 		
 		
