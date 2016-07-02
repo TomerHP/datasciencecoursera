@@ -16,10 +16,15 @@ so that you have a folder named UCI HAR Dataset with all subfolders and files.
 		
 		Name|Description
 		----|-----------
-		Activity	|	Factor
-		Subject	|	Num
-		tBodyAcc-mean()-X	|	Int
-		tBodyAcc-mean()-Y	|	Int
+		Activity|Factor
+		Subject|Num
+		tBodyAcc-mean()-X|Int
+		tBodyAcc-mean()-Y|Int
+		
+		
+		
+		
+		
 		tBodyAcc-mean()-Z	|	Int
 		tBodyAcc-std()-X	|	Int
 		tBodyAcc-std()-Y	|	Int
