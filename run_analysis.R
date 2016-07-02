@@ -13,27 +13,24 @@
   Lables<-read.table(header = FALSE,file = "getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/features.txt",colClasses = c("NULL","character"))
   Lables_V<-sapply(Lables,as.character)
   names(All)<-Lables_V
-  only_mean_and_std<-All[Lables_V[grep("mean\\(\\)|std\\(\\)",Lables_V)]]
+  extracted<-All[Lables_V[grep("mean\\(\\)|std\\(\\)",Lables_V)]]
   
 ##Uses descriptive activity names to name the activities in the data set
-  Activities<-read.table(header = FALSE,file = "getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/activity_labels.txt",col.names = c("Activity_code","Acitivity"))
+  Activities<-read.table(header = FALSE,file = "getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/activity_labels.txt",col.names = c("Activity_code","Activity"))
   Y_test<-read.table(header = FALSE,file = "getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt",col.names="Activity_code")
   Y_train<-read.table(header = FALSE,file = "getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt",col.names="Activity_code")
   Y_all<-rbind(Y_train,Y_test)
   Y_merged<-merge(Y_all,Activities)
   
 ##Appropriately labels the data set with descriptive variable names.
-  only_mean_and_std<-cbind(only_mean_and_std[1],Y_merged[2],only_mean_and_std[2:length(names(only_mean_and_std))])
-  test_subjects<-read.table(header = FALSE,file = "getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt",col.names=c("ID"))
-  train_subjects<-read.table(header = FALSE,file = "getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt",col.names=c("ID"))
+  test_subjects<-read.table(header = FALSE,file = "getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt",col.names=c("Subject"))
+  train_subjects<-read.table(header = FALSE,file = "getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt",col.names=c("Subject"))
   All_subjects<-rbind(train_subjects, test_subjects) 
   All<-cbind(All_subjects,All)
+  extracted<-cbind(All_subjects,Y_merged[2],extracted)
   
 ##From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
- 
-  Lables<-read.table(header = FALSE,file = "getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/features.txt",colClasses = c("NULL","character"))
-  Lables_V<-sapply(Lables,as.character)
-  names(All)<-Lables_V
-  only_mean_and_std<-All[Lables_V[grep("mean\\(\\)|std\\(\\)",Lables_V)]]
+  grouped<-aggregate(. ~ Activity + Subject, data = extracted, mean)
+  
   
   
