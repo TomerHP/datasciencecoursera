@@ -32,5 +32,5 @@
 	tidy<-cbind(All_subjects,activities,extracted)
 
 ##5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-  grouped<-aggregate(. ~Subject+Activity, data = tidy, mean)
-  write.table(grouped,"tidy_data.txt",row.names=FALSE)
+  	grouped<-aggregate(. ~Subject+Activity, data = tidy, mean)
+	 write.table(grouped,"tidy_data.txt",row.names=FALSE)
