@@ -1,6 +1,6 @@
 ##Code book
 	
-###variables names and descriptions of output
+###variables names and descriptions of output "tidy_data.txt"
 		
 Name|Description|Type
 ----|-----------|----
